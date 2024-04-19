@@ -1,0 +1,24 @@
+.map {
+    width: 500px;
+    height: 500px;
+
+}
+
+[class*="copyrights-pane"] {
+    display: none !important;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(0);
+}
+
+ul {
+    padding-left: 40px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.header_img {
+    height: 100px;
+    width: 100px;
+}
