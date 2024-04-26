@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Заказы:</h1>
+{% for item in poz%}
+==========================================
+<h1>Заказ номер {{item.id}}</h1>
+{{item.name}}<br>
+{{item.name_zakaza}}<br>
+{{item.email}}<br>
+{{item.address}}<br>
+{{item.created_date}}<br>
+===========================================
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+{% if current_user.is_authenticated %}
+
+<h1>Цены</h1>
+{% for item in tov%}
+==============================================================================!<br>
+<img class="img_img" src="../static/img/{{item.name_file}}">
+<h5 class="card-title">{{item.name}}</h5>
+<p class="card-text">{{item.cost}}руб</p>
+<p class="card-text">{{item.disc}}руб</p>
+==============================================================================!<br>
+{% endfor %}
+</body>
+{% else %}
+<h1>Пожалуйста зарегстрируйтесь!</h1>
+{% endif %}
+{% endblock %}
